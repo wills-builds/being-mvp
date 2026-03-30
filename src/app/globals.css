@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #161620;
+  color: #F0E6D3;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #161620; }
+::-webkit-scrollbar-thumb { background: #323245; border-radius: 3px; }
+
+@keyframes pulse-record {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.animate-pulse-record { animation: pulse-record 1.5s ease-in-out infinite; }
